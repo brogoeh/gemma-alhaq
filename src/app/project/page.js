@@ -1,58 +1,60 @@
 import React from 'react';
 import Container from '../Components/Container';
+import Link from 'next/link';
 
 export default function page() {
   return (
     <>
       <div className="py-40">
         <Container>
-          <div className="text-justify">
-            Alhamdulillah dengan izin Allah Subhanahu Wata'ala kami telah menjalankan beberapa program yang sudah di rencanakan, diantaranya
-            <div className="bg-slate-950 shadow-lg shadow-gray-900 mt-5 px-4 py-6 rounded-lg">
-              <div className="mb-1 flex justify-between w-full gap-x-5">
-                <details name="program">
+          <div className="text-justify leading-relaxed text-lg">
+            <span className="block text-center"> Alhamdulillah dengan izin Allah Subhanahu Wata'ala kami telah menjalankan beberapa program yang sudah di rencanakan, diantaranya</span>
+            <div className="bg-slate-950 shadow-lg shadow-gray-950 mt-5 px-4 py-6 rounded-lg">
+              <div className="mb-2.5 flex justify-between w-full gap-x-5">
+                <details name="program" className="w-full bg-gradient-to-br from-slate-950 to-indigo-950 bg-indigo-950 px-4 py-2.5 rounded">
                   <summary>Gemma berbagi</summary>
                   <p className="mb-6 mt-1">
-                    Program ini dibuat dengan tujuan agar masyarakat disekitar masjid dapat terbantu dan merasakan berkah dari apa yang telah diterima. Program ini rencananya Insya Allah akan diadakan ditiap tahun dengan dibagi beberapa
-                    tahapan
+                    Program ini dibuat dengan tujuan agar masyarakat disekitar masjid dapat terbantu dan merasakan berkah dari apa yang telah diterima. Program ini rencananya Insya Allah akan diadakan ditiap tahun dengan bertahap.
                   </p>
-                  {/* <div className="berbagi_satu mb-2.5"></div> */}
                   <img src="/images/image_2.jpg" alt="" width="400" className="rounded-full flex-1 justify-self-center my-3" />
                 </details>
               </div>
-              <div className="mb-1 flex justify-between w-full gap-x-5">
-                <details name="program">
+              <div className="mb-2.5 flex justify-between w-full gap-x-5">
+                <details name="program" className="w-full bg-gradient-to-br from-slate-950 to-indigo-950 bg-indigo-950 px-4 py-2.5 rounded">
                   <summary>Jum'at Berkah (Jumber)</summary>
                   <p>
                     Jumat berkah diadakan setiap 2 pekan sekali. Kami mengajak kepada Bapak dan Ibu yang ingin ikut mendermakan sebagian dari rezekinya baik itu berupa makanan, minuman ataupun dalam bentuk materi, silahkan hubungi kami.
                   </p>
-                  {/* <div className="berbagi_dua mb-2.5"></div> */}
                   <img src="/images/image_3.jpg" alt="" width="400" className="rounded-full flex-1 justify-self-center my-3" />
                 </details>
               </div>
-              <div className="mb-1 flex justify-between w-full gap-x-5">
-                <details name="program">
+              <div className="mb-2.5 flex justify-between w-full gap-x-5">
+                <details name="program" className="w-full bg-gradient-to-br from-slate-950 to-indigo-950 bg-indigo-950 px-4 py-2.5 rounded">
                   <summary>Pengkajian Ilmu Islam</summary>
                   <p>
                     Pengkajian ilmu islam diadakan setiap bulan dipekan kedua dan Insyaa Allah akan diadakan dipekan ke-4. Dengan adanya program ini diharapkan agar kita semua dapat mendapatkan ilmu yang diberikan dan dapat mengamalkan ilmu
-                    tersebut dalam kehidupan
+                    tersebut dalam kehidupan.
                   </p>
-                  {/* <div className="berbagi_tiga mb-2.5"></div> */}
                   <img src="/images/image_4.jpg" alt="" width="400" className="rounded-full flex-1 justify-self-center my-3" />
                 </details>
               </div>
-              <div className="mb-1 flex justify-between w-full gap-x-5">
-                <details name="program">
+              <div className="mb-2.5 flex justify-between w-full gap-x-5">
+                <details name="program" className="w-full bg-gradient-to-br from-slate-950 to-indigo-950 bg-indigo-950 px-4 py-2.5 rounded">
                   <summary>Santunan Yatim</summary>
                   <p>
                     Santunan yatim diberikan 2 kali dalam setahun yakni saat tahun baru hijriah dan juga menjelang hari raya Idul Fitr. Saat ini lingkupnya kecil hanya untuk masyarakat di RW 14 saja namun tidak menutup kemungkinan untuk
                     mencakup lingkup yang lebih besar lagi kelak dikemudian hari.
                   </p>
-                  {/* <div className="berbagi_empat mb-2.5"></div> */}
                   <img src="/images/image_5.jpg" alt="" width="400" className="rounded-full flex-1 justify-self-center my-3" />
                 </details>
               </div>
             </div>
+          </div>
+          <div className="text-center">
+            Doakan kami agar selalu istiqomah dalam kebaikan serta diberi kelancaran dalam menjalankan amanat ini. Sekiranya Bapak Ibu berkenan dan ingin berpartisipasi, silahkan klik{' '}
+            <Link href="/contact" className="underline italic text-red-400 hover:text-red-600 hover:no-underline">
+              tautan ini
+            </Link>
           </div>
         </Container>
       </div>

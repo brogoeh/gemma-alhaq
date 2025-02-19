@@ -39,3 +39,21 @@ body {
   mask-size: cover;
   mask-position: center;
 }
+summary {
+  /* list-style-type: '⬇ '; */
+  display: flex;
+  justify-content: space-between;
+}
+summary::after {
+  content: '';
+  width: 18px;
+  height: 15px;
+  background: url('/images/chevron-down.png');
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}

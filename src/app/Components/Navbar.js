@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <div className="sm:hidden lg:block  w-full shadow backdrop-blur-sm bg-transparent fixed z-50 ">
+    <div className="lg:block hidden text-lg w-full shadow backdrop-blur-sm bg-transparent fixed z-50 ">
       <div className="flex justify-between text-center items-center w-1/2 mx-auto h-32 tracking-wide">
         <div className="grid grid-cols-2 justify-items-center space-x-5">
           <Link href="/" className=" hover:text-gray-400">
