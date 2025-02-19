@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function page() {
   return (
     <>
-      <div className="py-40">
+      <div className="lg:py-40 py-20">
         <Container>
           <div className="text-justify leading-relaxed text-lg">
             <span className="block text-center"> Alhamdulillah dengan izin Allah Subhanahu Wata'ala kami telah menjalankan beberapa program yang sudah di rencanakan, diantaranya</span>
